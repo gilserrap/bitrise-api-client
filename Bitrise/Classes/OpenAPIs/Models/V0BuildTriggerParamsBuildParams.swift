@@ -22,14 +22,14 @@ public struct V0BuildTriggerParamsBuildParams: Codable {
     public var environments: [V0BuildParamsEnvironment]?
     public var pullRequestAuthor: String?
     public var pullRequestHeadBranch: String?
-    public var pullRequestId: Any?
+    public var pullRequestId: String?
     public var pullRequestMergeBranch: String?
     public var pullRequestRepositoryUrl: String?
     public var skipGitStatusReport: Bool?
     public var tag: String?
     public var workflowId: String?
 
-    public init(branch: String? = nil, branchDest: String? = nil, branchDestRepoOwner: String? = nil, branchRepoOwner: String? = nil, buildRequestSlug: String? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitPaths: [V0CommitPaths]? = nil, diffUrl: String? = nil, environments: [V0BuildParamsEnvironment]? = nil, pullRequestAuthor: String? = nil, pullRequestHeadBranch: String? = nil, pullRequestId: Any? = nil, pullRequestMergeBranch: String? = nil, pullRequestRepositoryUrl: String? = nil, skipGitStatusReport: Bool? = nil, tag: String? = nil, workflowId: String? = nil) {
+    public init(branch: String? = nil, branchDest: String? = nil, branchDestRepoOwner: String? = nil, branchRepoOwner: String? = nil, buildRequestSlug: String? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitPaths: [V0CommitPaths]? = nil, diffUrl: String? = nil, environments: [V0BuildParamsEnvironment]? = nil, pullRequestAuthor: String? = nil, pullRequestHeadBranch: String? = nil, pullRequestId: String? = nil, pullRequestMergeBranch: String? = nil, pullRequestRepositoryUrl: String? = nil, skipGitStatusReport: Bool? = nil, tag: String? = nil, workflowId: String? = nil) {
         self.branch = branch
         self.branchDest = branchDest
         self.branchDestRepoOwner = branchDestRepoOwner
