@@ -20,7 +20,6 @@ public struct V0BuildResponseItemModel: Codable {
     public var finishedAt: String?
     public var isOnHold: Bool?
     public var machineTypeId: String?
-    public var originalBuildParams: String?
     public var pullRequestId: Int?
     public var pullRequestTargetBranch: String?
     public var pullRequestViewUrl: String?
@@ -34,7 +33,7 @@ public struct V0BuildResponseItemModel: Codable {
     public var triggeredBy: String?
     public var triggeredWorkflow: String?
 
-    public init(abortReason: String? = nil, branch: String? = nil, buildNumber: Int? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitViewUrl: String? = nil, environmentPrepareFinishedAt: String? = nil, finishedAt: String? = nil, isOnHold: Bool? = nil, machineTypeId: String? = nil, originalBuildParams: String? = nil, pullRequestId: Int? = nil, pullRequestTargetBranch: String? = nil, pullRequestViewUrl: String? = nil, slug: String? = nil, stackIdentifier: String? = nil, startedOnWorkerAt: String? = nil, status: Int? = nil, statusText: String? = nil, tag: String? = nil, triggeredAt: String? = nil, triggeredBy: String? = nil, triggeredWorkflow: String? = nil) {
+    public init(abortReason: String? = nil, branch: String? = nil, buildNumber: Int? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitViewUrl: String? = nil, environmentPrepareFinishedAt: String? = nil, finishedAt: String? = nil, isOnHold: Bool? = nil, machineTypeId: String? = nil, pullRequestId: Int? = nil, pullRequestTargetBranch: String? = nil, pullRequestViewUrl: String? = nil, slug: String? = nil, stackIdentifier: String? = nil, startedOnWorkerAt: String? = nil, status: Int? = nil, statusText: String? = nil, tag: String? = nil, triggeredAt: String? = nil, triggeredBy: String? = nil, triggeredWorkflow: String? = nil) {
         self.abortReason = abortReason
         self.branch = branch
         self.buildNumber = buildNumber
@@ -45,7 +44,6 @@ public struct V0BuildResponseItemModel: Codable {
         self.finishedAt = finishedAt
         self.isOnHold = isOnHold
         self.machineTypeId = machineTypeId
-        self.originalBuildParams = originalBuildParams
         self.pullRequestId = pullRequestId
         self.pullRequestTargetBranch = pullRequestTargetBranch
         self.pullRequestViewUrl = pullRequestViewUrl
@@ -71,7 +69,6 @@ public struct V0BuildResponseItemModel: Codable {
         case finishedAt = "finished_at"
         case isOnHold = "is_on_hold"
         case machineTypeId = "machine_type_id"
-        case originalBuildParams = "original_build_params"
         case pullRequestId = "pull_request_id"
         case pullRequestTargetBranch = "pull_request_target_branch"
         case pullRequestViewUrl = "pull_request_view_url"
